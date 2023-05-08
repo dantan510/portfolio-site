@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border-bottom: 2px solid black;
+}
+
+.header-link {
+  padding: 15px;
+  cursor: pointer;
+}
