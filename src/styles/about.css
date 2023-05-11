@@ -1,3 +1,31 @@
 .aboutpage {
-  margin: 20px;
+  display: flex;
+  margin: 200px;
+  gap: 10px;
+}
+
+.aboutpage-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutpage-title {
+  font-size: 40px;
+}
+
+.aboutpage-title {
+  gap: 10px;
+}
+
+.aboutpage-header {
+  font-size: 20px;
+}
+
+#profile-picture {
+  width: 300px;
+  height: 400px;
+  border-radius: 50%;
+
 }
