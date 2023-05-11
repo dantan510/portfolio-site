@@ -1,27 +1,33 @@
 import Home from './Home'
 import About from './About'
-import Work from './Work'
+import Projects from './Projects'
 import Skills from './Skills'
 import Contact from './Contact'
-export const Routes = {
-  home: {
-    key: 'home',
+
+export const routes = [
+  {
+    id: 1,
+    title: 'home',
     component: Home,
   },
-  about: {
-    key: 'about',
+  {
+    id: 2,
+    title: 'about',
     component: About,
   },
-  work: {
-    key: 'work',
-    component: Work,
+  {
+    id: 3,
+    title: 'projects',
+    component: Projects,
   },
-  skills: {
-    key: 'skills',
+  {
+    id: 4,
+    title: 'skills',
     component: Skills
   },
-  contact: {
-    key: 'contact',
+  {
+    id: 5,
+    title: 'contact',
     component: Contact
   }
-};
+];

@@ -5,7 +5,10 @@
   border-bottom: 2px solid black;
 }
 
-.header-link {
-  padding: 15px;
+.header-links {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
   cursor: pointer;
 }
+

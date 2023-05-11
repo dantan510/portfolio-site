@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Work = () => {
+const Projects = () => {
 // https://github.com/sdc-green-lantern/Questions-API
 // https://github.com/Blue-Ocean-3-Bowser/libre/tree/main/client/src/components/HomePage/SideBar/Notifications
 // https://github.com/Seinfeld-Front-End-Capstone/fec-rfp2207-seinfeld/tree/main/client/src/components/questionsAnswers
@@ -19,4 +19,4 @@ const Work = () => {
   )
 }
 
-export default Work
+export default Projects

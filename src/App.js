@@ -2,23 +2,52 @@ import React, { useState } from 'react'
 import Header from './pages/Header'
 import Home from './pages/Home'
 import About from './pages/About'
-import Work from './pages/Work'
-import { Routes } from './pages/Routes'
+import Projects from './pages/Projects'
+import Contact from './pages/Contact'
+import './styles/app.css'
+import { routes } from './pages/Routes'
 
 function getActivePage(pageKey) {
-  const ActivePage = Routes[pageKey].component;
-  return <ActivePage/>;
+  const ActivePage = routes[pageKey].component;
+  return <ActivePage />;
 }
 
 const App = () => {
-  const [activePage, setActivePage] = useState(Routes.home.key);
-  let activePageComponent = getActivePage(activePage);
+  const [activePage, setActivePage] = useState(<Home/>);
+  // let activePageComponent = getActivePage(activePage);
+
+  // const pages = [
+  //   {
+  //     id: 1,
+  //     title: 'Home'
+  //   },
+  //   {
+  //     id: 2,
+  //     title: 'About'
+  //   },
+  //   {
+  //     id: 3,
+  //     title: 'Projects'
+  //   },
+  //   {
+  //     id: 4,
+  //     title: 'Skills'
+  //   },
+  //   {
+  //     id: 5,
+  //     title: 'Contact'
+  //   },
+  // ]
 
   return (
-    <>
-      <Header changePage={setActivePage}/>
-      {activePageComponent}
-    </>
+    <div className='app'>
+      <Header changePage={setActivePage} />
+      <Home/>
+      <About/>
+      <Projects/>
+      <Contact/>
+    </div>
+
   )
 }
 

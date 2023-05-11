@@ -3,12 +3,17 @@ import '../styles/home.css'
 
 const Home = () => {
   return (
-    <div>
-     <div className='homepage-intro'>
+    <div className='home-container'>
       <div className='homepage-name'>DANIEL TAN</div>
-      <div className='homepage-title'>Full Stack Software Engineer</div>
-      <button id='contact-button'>Get In Touch</button>
-     </div>
+      <div className='homepage-title'>
+        <span>Full Stack Software Engineer</span>
+        <span className='blink'> _</span>
+      </div>
+      <div className='contact-box'>
+        <div className='contact-button'>
+          <span >Get In Touch</span>
+        </div>
+      </div>
     </div>
   )
 }
