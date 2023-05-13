@@ -22,17 +22,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
-  margin: 300px;
-  padding: 30px;
+  gap: 2rem;
+  margin: 18.75rem;
 }
 
 .homepage-name {
-  font-size: 70px;
+  font-size: 4.5rem;
 }
 
 .homepage-title span {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .blink {

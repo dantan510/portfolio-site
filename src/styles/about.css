@@ -1,7 +1,7 @@
 .aboutpage {
   display: flex;
-  margin: 200px;
-  gap: 10px;
+  margin: 12em;
+  gap: 10em;
 }
 
 .aboutpage-content {
@@ -9,23 +9,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1em;
 }
 
 .aboutpage-title {
-  font-size: 40px;
+  font-size: 4rem;
 }
 
 .aboutpage-title {
-  gap: 10px;
+  gap: 3em;
 }
 
 .aboutpage-header {
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 #profile-picture {
-  width: 300px;
-  height: 400px;
+  width: 20rem;
+  height: 25rem;
   border-radius: 50%;
 
 }

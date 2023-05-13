@@ -8,11 +8,6 @@ const Header = ({ changePage }) => {
 
   return (
     <div className='header'>
-      {/* {routes.map((page) => (
-        <div className='header-links' key={page.id}>
-          <Link to={`${page.title}`} spy={true} smooth={true} offset={50} duration={500} key={page.id}>{page.title}</Link>
-        </div>
-      ))} */}
       <div className='header-links'>
         <Link to={'/home'} spy={true} smooth={true} offset={50} duration={500}>Home</Link>
         <Link to={'/about'} spy={true} smooth={true} offset={50} duration={500}>About</Link>
