@@ -9,15 +9,6 @@ body {
   color: white;
 }
 
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-   }
-}
-
 .home-container {
   display: flex;
   flex-direction: column;
@@ -117,4 +108,44 @@ body {
 .contact-button:hover::after {
   opacity: 0;
   transform: scale(0.1, 1);
+}
+
+/* icon styling */
+
+.icon-container {
+  display: flex;
+  gap: 8rem;
+}
+
+.icon-link {
+  cursor: pointer;
+}
+
+.icon-link:hover{
+  transform: scale(1.4);
+  transition: all-ease 0.8s;
+
+}
+
+.icon-link:hover {
+  transform: scale(1);
+  animation: pulse 1s infinite;
+  animation-delay: 0s;
+}
+
+@keyframes pulse {
+  to {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+    transform: scale(.8);
+  }
 }

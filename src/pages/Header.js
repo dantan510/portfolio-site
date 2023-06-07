@@ -9,11 +9,11 @@ const Header = ({ changePage }) => {
   return (
     <div className='header'>
       <div className='header-links'>
-        <Link to={'/home'} spy={true} smooth={true} offset={50} duration={500}>Home</Link>
-        <Link to={'/about'} spy={true} smooth={true} offset={50} duration={500}>About</Link>
-        <Link to={'/projects'} spy={true} smooth={true} offset={50} duration={500}>Projects</Link>
-        <Link to={'/skills'} spy={true} smooth={true} offset={50} duration={500}>Skills</Link>
-        <Link to={'/contact'} spy={true} smooth={true} offset={50} duration={500}>Contact</Link>
+        <a>Home</a>
+        <a>About</a>
+        <a>Projects</a>
+        <a>Skills</a>
+        <a>Contact</a>
       </div>
       {/* <a className='header-link' id='home' onClick={() => changePage(routes.home.key)}>Home</a>
       <a className='header-link' id='about' onClick={() => changePage(routes.about.key)}>About</a>

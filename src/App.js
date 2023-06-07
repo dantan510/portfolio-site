@@ -4,8 +4,10 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
+
 import './styles/app.css'
 import { routes } from './pages/Routes'
+
 
 function getActivePage(pageKey) {
   const ActivePage = routes[pageKey].component;
