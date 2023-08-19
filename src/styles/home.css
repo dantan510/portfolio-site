@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'Inter-Regular';
-  src: url('../fonts/Inter-Regular.ttf')
+  font-family: 'Oxygen';
+  src: url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen')
 }
 
 body {
-  font-family: Inter-Regular sans-serif;
+  font-family: 'Oxygen', sans-serif;
   background-color: #1e272e;
   color: white;
 }
@@ -12,20 +12,58 @@ body {
 .home-container {
   display: flex;
   flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin: 18.75rem;
 }
 
 .homepage-name {
-  font-size: 4.5rem;
+  font-family: 'Oxygen Mono', monospace;
+  font-size: 1.5rem;
+  animation: fadeInUp ease 1.5s forwards
+}
+
+.homepage-dt {
+  font-size: 5rem;
+  animation: fadeInUp ease 2s forwards
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0.5em)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.homepage-title {
+  animation: fadeAndUp ease 2s forwards;
+}
+
+@keyframes fadeAndUp {
+  0% {
+    opacity: 0;
+    transform: translateY(1em)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .homepage-title span {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  animation: fadeInUp ease 1s forwards;
 }
 
-.blink {
+
+/* .blink {
   animation: blink-animation 1.2s;
   -webkit-animation: blink-animation 1.2s steps(5, start) infinite;
 }
@@ -40,7 +78,7 @@ body {
   to {
     visibility: hidden;
   }
-}
+} */
 
 .contact-box {
   background-color: #1e272e
@@ -52,6 +90,18 @@ body {
   text-align: center;
   width: 250px;
   cursor: pointer;
+  animation: fade-up ease 2.5s forwards;;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(0.5em)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .contact-button {
@@ -122,8 +172,20 @@ body {
   transition: 0.5s ease;
 }
 
+.fadeIn {
+  animation: fadeInOut 2.8s ease-in;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .icon-link:hover {
-  transform: scale(1.3);
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
 }

@@ -1,0 +1,42 @@
+.work-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin: 3em 6em;
+  padding-bottom: 5em;
+  border-bottom: 0.1em solid rgb(176, 176, 227);
+}
+
+.work-header {
+  font-size: 3em;
+}
+
+.work-experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.work-experience-card {
+  padding: 2em;
+  background-color: rgb(65, 65, 81);
+  box-shadow: 0 0 10px #000;
+  border-radius: 0.5em;
+}
+
+.company-description {
+  font-style: italic;
+  padding-left: 0.8em;
+  margin-bottom: 0.2em;
+}
+
+.job-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.job-title span {
+  font-size: 0.8em;
+}

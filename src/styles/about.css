@@ -1,32 +1,32 @@
 .aboutpage {
   display: flex;
-  margin: 12em;
+
   gap: 10em;
+  margin: 2em 6em;
+  padding: 2em 0;
+  border-bottom: 0.1em solid rgb(176, 176, 227);
+  border-top: 0.1em solid rgb(176, 176, 227);
+  /* margin-bottom: 5em; */
 }
 
 .aboutpage-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 1em;
+  gap: 2rem;
 }
 
 .aboutpage-title {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .aboutpage-title {
   gap: 3em;
 }
 
-.aboutpage-header {
-  font-size: 1.5rem;
-}
-
 #profile-picture {
   width: 20rem;
   height: 25rem;
   border-radius: 50%;
-
+  margin-right: 2em;
 }

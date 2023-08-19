@@ -1,0 +1,11 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 6em;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+}
