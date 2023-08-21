@@ -10,9 +10,8 @@ module.exports = {
     publicPath: "/"
   },
   devServer: {
-    port: 3000,
-    allowedHosts: 'auto',
-    disableHostCheck: true,
+    port: 8080,
+    allowedHosts: 'all',
   },
   module: {
     rules: [
