@@ -2,10 +2,59 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1em;
   margin: 2em 6em;
+}
+
+.contact-title {
+  font-size: 2em;
 }
 
 .contact-box {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  gap: 1em;
 }
+
+.contact-info {
+  display: flex;
+  padding: 1em;
+  border: 0.1em solid white;
+  border-radius: 0.5em;
+  background-color: grey;
+  gap: 0.6em;
+  cursor: pointer;
+}
+
+.copy-icon, .check-icon {
+  cursor: pointer;
+  transition: transform 0.5s ease
+}
+
+
+/* .copy-icon:hover, .check-icon:hover {
+  color: rgb(176, 176, 227);
+  transform: translateY(-3px);
+  /* transform: scale(1.2);
+ } */
+
+.icon {
+  transition: transform 0.5s ease-out, opacity 0.5s ease-in;
+}
+
+
+.check-icon {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.icon.copied {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.icon.copied.check-icon {
+  transform: scale(1.2);
+  opacity: 1;
+}
+

@@ -23,8 +23,8 @@ const App = () => {
       <About />
       <Work/>
       <Projects openLink={openLink} />
-      <Contact />
-      <Footer/>
+      <Contact openLink={openLink}/>
+      {/* <Footer /> */}
     </div>
 
   )
