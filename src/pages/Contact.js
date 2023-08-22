@@ -30,7 +30,7 @@ const Contact = ({openLink}) => {
           }} />
         </div>
         <div className='contact-info'>
-          <div className='download' onClick={() => openLink('https://drive.google.com/file/d/1pXd4MCOAFrDrnK5X-kDsFLxKdEkeAAyU/view?usp=sharing')} >Download My Resume Here</div>
+          <div className='download' onClick={() => openLink('https://drive.google.com/file/d/1Bp4YqqC35n3wIc6tdJTcYnQ2w3kQxz0u/view?usp=sharing')} >Download My Resume Here</div>
           <FontAwesomeIcon icon={faDownload} />
         </div>
       </div>
