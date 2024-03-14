@@ -1,27 +1,33 @@
 .aboutpage {
   display: flex;
-
-  gap: 10em;
-  margin: 2em 6em;
-  padding: 2em 0;
-  border-bottom: 0.1em solid rgb(176, 176, 227);
-  border-top: 0.1em solid rgb(176, 176, 227);
-  /* margin-bottom: 5em; */
+  flex-direction: column;
+  margin: 0 6em;
+  padding: 5em 0;
+  border-top: 1px solid #bbbbbb;
+  border-bottom: 1px solid #bbbbbb;
 }
 
 .aboutpage-content {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
 }
 
-.aboutpage-title {
-  font-size: 3rem;
+.aboutpage-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
 }
 
-.aboutpage-title {
-  gap: 3em;
+.aboutMe {
+  font-size: 2.5em;
+}
+
+.skills-icons {
+  margin: 1em 2em;
+  height: 5%;
+  width: 5%;
 }
 
 #profile-picture {
@@ -30,3 +36,4 @@
   border-radius: 50%;
   margin-right: 2em;
 }
+

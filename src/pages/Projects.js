@@ -13,14 +13,14 @@ const Projects = ({ openLink }) => {
 
   // https://github.com/dantan510/portfolio-site
   return (
-    <div className='project-container'>
+    <div className='project-container' id='projects'>
 
       <div className='project-head'>Projects</div>
 
       <div className='project-card' >
         <div className='project-title-and-icons'>
           <span className='project-name'>tekstyle</span>
-          <span><FontAwesomeIcon className='icon-link' icon={faGithub} size='2x' style={{ color: "#afa6c4" }} onClick={() => openLink('https://github.com/Seinfeld-Front-End-Capstone/fec-rfp2207-seinfeld/tree/main/client/src/components/questionsAnswers')} />
+          <span><FontAwesomeIcon className='icon-link' icon={faGithub} size='2x' style={{ color: "#d8d8d8" }} onClick={() => openLink('https://github.com/Seinfeld-Front-End-Capstone/fec-rfp2207-seinfeld/tree/main/client/src/components/questionsAnswers')} />
           </span>
         </div>
 
@@ -44,7 +44,7 @@ const Projects = ({ openLink }) => {
       <div className='project-card' >
         <div className='project-title-and-icons'>
           <span className='project-name'>Api Microservice</span>
-          <span><FontAwesomeIcon className='icon-link' icon={faGithub} size='2x' style={{ color: "#afa6c4" }} onClick={() => openLink('https://github.com/sdc-green-lantern/Questions-API')} />
+          <span><FontAwesomeIcon className='icon-link' icon={faGithub} size='2x' style={{ color: "#d8d8d8" }} onClick={() => openLink('https://github.com/sdc-green-lantern/Questions-API')} />
           </span>
         </div>
 
@@ -68,7 +68,7 @@ const Projects = ({ openLink }) => {
       <div className='project-card'>
         <div className='project-title-and-icons'>
           <span className='project-name'>Libre</span>
-          <span><FontAwesomeIcon className='icon-link' icon={faGithub} size='2x' style={{ color: "#afa6c4" }} onClick={() => openLink('https://github.com/Blue-Ocean-3-Bowser/libre/tree/main/client/src/components/HomePage/SideBar/Notifications')} />
+          <span><FontAwesomeIcon className='icon-link' icon={faGithub} size='2x' style={{ color: "#d8d8d8" }} onClick={() => openLink('https://github.com/Blue-Ocean-3-Bowser/libre/tree/main/client/src/components/HomePage/SideBar/Notifications')} />
           </span>
         </div>
 
@@ -95,3 +95,4 @@ const Projects = ({ openLink }) => {
 }
 
 export default Projects
+

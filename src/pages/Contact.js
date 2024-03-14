@@ -19,8 +19,9 @@ const Contact = ({openLink}) => {
   })
 
   return (
-    <div className='contact-container'>
-      <div className='contact-title'>Let's Chat!</div>
+    <div className='contact-container' id='contact'>
+      <div className='contact-title'>Contact</div>
+      <div>Please reach out regarding employment and networking opportunities. All inquires are welcome.</div>
       <div className='contact-box'>
         <div className='contact-info'>
           <div className='email'>dantan510@gmail.com</div>
@@ -40,3 +41,4 @@ const Contact = ({openLink}) => {
 }
 
 export default Contact
+

@@ -1,22 +1,26 @@
 import React, { useState, useRef } from 'react';
 import { Link } from 'react-scroll'
-import { routes } from './Routes';
 import '../styles/header.css'
+
 
 const Header = () => {
 
+  const executeScroll = (id) => {
+    const element = document.getElementById(id)
+    if (element) { element.scrollIntoView({ behavior: 'smooth' })}
+  }
 
   return (
+
     <div className='header'>
       <div className='header-links'>
         <div className='line-left'></div>
-        <div className='links'>
-          <a>Home</a>
-          <a>About</a>
-          <a>Projects</a>
-          <a>Skills</a>
-          <a>Contact</a>
-        </div>
+        <nav className='links'>
+          <a onClick={() => executeScroll('about')}>About</a>
+          <a onClick={() => executeScroll('work')}>Experience</a>
+          <a onClick={() => executeScroll('projects')}>Projects</a>
+          <a onClick={() => executeScroll('contact')}>Contact</a>
+        </nav>
         <div className='line-right'></div>
       </div>
     </div>
@@ -24,3 +28,4 @@ const Header = () => {
 }
 
 export default Header
+

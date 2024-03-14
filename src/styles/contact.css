@@ -3,7 +3,9 @@
   flex-direction: column;
   align-items: center;
   gap: 1em;
-  margin: 2em 6em;
+  margin: 0 6em;
+  padding: 5em 0;
+  border-bottom: 1px solid #bbbbbb;
 }
 
 .contact-title {
@@ -35,7 +37,7 @@
 /* .copy-icon:hover, .check-icon:hover {
   color: rgb(176, 176, 227);
   transform: translateY(-3px);
-  /* transform: scale(1.2);
+  transform: scale(1.2);
  } */
 
 .icon {

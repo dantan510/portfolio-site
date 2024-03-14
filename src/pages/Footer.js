@@ -5,8 +5,9 @@ import '../styles/footer.css'
 const Footer = () => {
 
   return (
-    <div>footer</div>
+    <div className='footer'>Website built by Daniel Tan. All rights reserved.</div>
   )
 }
 
 export default Footer
+

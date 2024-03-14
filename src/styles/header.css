@@ -6,10 +6,13 @@
 .header {
   display: flex;
   justify-content: flex-end;
+  background-color: #202020;
   padding-right: 2em;
-  position: relative;
-  /* animation: 1s ease-out 0s 1 slideInFromRight */
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
+
 
 .header-links {
   display: flex;
@@ -24,7 +27,6 @@
   display: flex;
   gap: 2em;
   opacity: 0;
-  /* transform: translateX(100%); */
   animation: fadeIn 0.8s ease-out forwards;
   animation-delay: 1s;
 }
@@ -40,8 +42,6 @@
     opacity: 1;
   }
 }
-
-
 
 div .line-left:before {
   content: "";
@@ -105,3 +105,19 @@ a:hover {
   color: rgb(176, 176, 227);
   transform: translateY(-4px);
 }
+
+@media (max-width: 700px) {
+  .header {
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  .line-left, .line-right {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+

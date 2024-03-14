@@ -5,8 +5,8 @@
 
 body {
   font-family: 'Oxygen', sans-serif;
-  background-color: #1e272e;
-  color: white;
+  background-color: #202020;
+  color: #d8d8d8;
 }
 
 .home-container {
@@ -80,9 +80,9 @@ body {
   }
 } */
 
-.contact-box {
+/* .contact-box {
   background-color: #1e272e
-}
+} */
 
 .contact-button {
   line-height: 50px;
@@ -105,7 +105,7 @@ body {
 }
 
 .contact-button {
-  color: #FFF;
+  color: white;
   transition: all 1s;
   position: relative;
 }
@@ -128,9 +128,8 @@ body {
   border-bottom-width: 1px;
   border-top-style: solid;
   border-bottom-style: solid;
-  border-top-color: rgb(176, 176, 227);
-  /* border-top-color: rgba(255,255,255,0.5); */
-  border-bottom-color: rgb(176, 176, 227);
+  border-top-color: white;
+  border-bottom-color: white;
   transform: scale(0.1, 1);
 }
 
@@ -152,7 +151,7 @@ body {
   height: 100%;
   z-index: 1;
   transition: all 1s;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(184, 184, 184, 0.1);
 }
 
 .contact-button:hover::after {
@@ -189,3 +188,4 @@ body {
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
 }
+
