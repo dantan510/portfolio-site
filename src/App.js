@@ -15,22 +15,22 @@ const openLink = (url) => {
 
 const App = () => {
 
-  // const myRef = useRef(null)
-
-  // const executeScroll = (id) => {
-  //   const element = document.getElementById(id)
-  //   if (element) { myRef.current.scrollIntoView({ behavior: 'smooth' })}
-  // }
+  const executeScroll = (id) => {
+    const element = document.getElementById(id)
+    if (element) { element.scrollIntoView({ behavior: 'smooth' }) }
+  }
 
   return (
+
+
     <div className='app'>
-      <Header />
-      <Home openLink={openLink} />
-      <About />
+      <Header executeScroll={executeScroll}/>
+      <Home openLink={openLink} executeScroll={executeScroll}/>
+      {/* <About /> */}
       <Work />
       <Projects openLink={openLink} />
       <Contact openLink={openLink} />
-      <Footer />
+      {/* <Footer /> */}
     </div>
 
   )

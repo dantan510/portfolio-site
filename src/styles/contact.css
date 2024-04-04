@@ -1,44 +1,115 @@
+:root {
+  --purple: #747fe0;
+}
+
 .contact-container {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 1em;
-  margin: 0 6em;
-  padding: 5em 0;
-  border-bottom: 1px solid #bbbbbb;
+  gap: 4em;
+  /* border-bottom: 1px solid var(--purple); */
+}
+
+.contact-header {
+  color: var(--purple);
+  text-align: center;
 }
 
 .contact-title {
-  font-size: 2em;
+  font-size: 3.2em;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10em;
+}
+
+input,
+textarea {
+  height: 100%;
+  width: 100%;
+  background-color: #F9F9F9;
+  padding-bottom: 0.5em;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--purple);
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+label {
+  color: var(--purple);
+  position: absolute;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+.form-message {
+  position: relative;
+}
+
+.form-message label {
+  left: 0;
+}
+
+input:focus:valid~label,
+textarea:focus:valid~label,
+input:not(:placeholder-shown)~label,
+textarea:not(:placeholder-shown)~label {
+  transform: translateY(-25px);
+}
+
+.form-name,
+.form-email {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+}
+
+.input-data input:-webkit-autofill {
+  -webkit-box-shadow: white inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.error-message {
+  padding-top: 0.5em;
 }
 
 .contact-box {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 4em;
 }
 
 .contact-info {
   display: flex;
-  padding: 1em;
-  border: 0.1em solid white;
+  justify-content: center;
+  background-color: white;
+  min-width: 20vh;
+  padding: 1.1em;
   border-radius: 0.5em;
-  background-color: grey;
   gap: 0.6em;
   cursor: pointer;
 }
 
-.copy-icon, .check-icon {
+.copy-icon,
+.check-icon {
   cursor: pointer;
   transition: transform 0.5s ease
 }
-
-
-/* .copy-icon:hover, .check-icon:hover {
-  color: rgb(176, 176, 227);
-  transform: translateY(-3px);
-  transform: scale(1.2);
- } */
 
 .icon {
   transition: transform 0.5s ease-out, opacity 0.5s ease-in;
@@ -60,3 +131,35 @@
   opacity: 1;
 }
 
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  font-size: 15px;
+  width: 40%;
+  padding: 1.25em 3em;
+  border: 1px solid var(--purple);
+  color: var(--purple);
+  cursor: pointer;
+  background: linear-gradient(to left, white 50%, var(--purple) 50%) right;
+  background-size: 200% 100%;
+  transition: all 0.3s ease-out;
+}
+
+.submit-button:hover {
+  background-position: left bottom;
+  color: white;
+}
+
+#right-arrow {
+  margin-left: 1.55em;
+}
+
+#right-arrow path {
+  transition: all 0.3s ease-out; /* Add transition effect */
+}
+
+.submit-button:hover #right-arrow path {
+  stroke: white; /* Change arrow color to white on hover */
+}
