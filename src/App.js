@@ -26,11 +26,9 @@ const App = () => {
     <div className='app'>
       <Header executeScroll={executeScroll}/>
       <Home openLink={openLink} executeScroll={executeScroll}/>
-      {/* <About /> */}
       <Work />
       <Projects openLink={openLink} />
       <Contact openLink={openLink} />
-      {/* <Footer /> */}
     </div>
 
   )
