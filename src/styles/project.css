@@ -34,26 +34,6 @@
   line-height: 1.5em;
 }
 
-/* .project-title-and-icons  {
-  display: flex;
-  justify-content: space-between;
-}
-
-.project-name {
-  font-size: 1.8em;
-}
-
-.project-image-and-description {
-  display: flex;
-  align-items: center;
-  gap: 4em;
-}
-
-.project-description {
-  margin-right: 4em;
-} */
-
-
 .project-languages {
   font-size: 0.8em;
   display: flex;
@@ -80,3 +60,4 @@
 .icon-link {
   color: #747fe0;
 }
+

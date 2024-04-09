@@ -52,8 +52,6 @@ const Projects = ({ openLink }) => {
         </div>
       </div>
 
-
-
       <div className='project-card' onClick={() => openLink('https://github.com/Blue-Ocean-3-Bowser/libre')}>
         <img className='project-image' src={libre} alt='cover image for libre' />
         <div className='project-content'>
