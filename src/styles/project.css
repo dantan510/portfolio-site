@@ -1,5 +1,5 @@
 .project-container {
-  margin: 0 6em;
+  margin: 0 10em;
   padding: 5em 0;
   border-bottom: 1px solid #bbbbbb;
 }
@@ -11,16 +11,30 @@
 
 .project-card {
   display: flex;
-  flex-direction: column;
-  gap: 1em;
-  background-color: #2a2a2a;
+  gap: 5em;
+  background-color: white;
   box-shadow: 0 0 10px #000;
   padding: 2.5em;
   margin-bottom: 1em;
-
+  cursor: pointer;
 }
 
-.project-title-and-icons  {
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+
+.project-name {
+  font-size: 1.8em;
+}
+
+.project-description {
+  line-height: 1.5em;
+}
+
+/* .project-title-and-icons  {
   display: flex;
   justify-content: space-between;
 }
@@ -37,7 +51,7 @@
 
 .project-description {
   margin-right: 4em;
-}
+} */
 
 
 .project-languages {
@@ -49,14 +63,20 @@
 
 .project-languages span {
   padding: 0.55em;
+  border: 1px solid #747fe0;
   border-radius: 0.3em;
-  background-color:#202020;
 }
 
 .project-image {
   box-shadow: 0 0 10px #000;
   border: 1px solid white;
   border-radius: 0.5em;
-  width: 25%;
+  float: left;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 
+.icon-link {
+  color: #747fe0;
+}

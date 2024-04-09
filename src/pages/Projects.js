@@ -11,85 +11,67 @@ import '../styles/project.css'
 
 const Projects = ({ openLink }) => {
 
-  // https://github.com/dantan510/portfolio-site
   return (
     <div className='project-container' id='projects'>
-
       <div className='project-head'>Projects</div>
+      <div className='project-card' onClick={() => openLink('https://github.com/Seinfeld-Front-End-Capstone/fec-rfp2207-seinfeld/tree/main/client/src/components/questionsAnswers')}>
 
-      <div className='project-card' >
-        <div className='project-title-and-icons'>
-          <span className='project-name'>tekstyle</span>
-          <span><FontAwesomeIcon className='icon-link' icon={faGithub} size='2x' style={{ color: "#d8d8d8" }} onClick={() => openLink('https://github.com/Seinfeld-Front-End-Capstone/fec-rfp2207-seinfeld/tree/main/client/src/components/questionsAnswers')} />
-          </span>
-        </div>
-
-        <div className='project-languages'>
-          <span>Javascript</span>
-          <span>React</span>
-          <span>AWS</span>
-          <span>Webpack</span>
-          <span>CSS</span>
-        </div>
-
-        <div className='project-image-and-description'>
-          <img className='project-image' src={tekstyle} alt='cover image for tekstyle' />
+        <img className='project-image' src={tekstyle} alt='cover image for tekstyle' />
+        <div className='project-content'>
+          <div className='project-name'>tekstyle</div>
           <div className='project-description'>
-            A modern product detail page for an e-commerce site. Users can select different products to view, and can interact with the Q&A and rating and reviews components.
+            Tekstyle is a modern product detail page for an e-commerce site. Users can select from a wide range of products, each presented with images and a description of the product. A key feature of this page is the interactive Q&A component, allowing users to ask questions directly on the product page, which can be answered by other users. Users can also interact with the entries by voting and reporting.
+          </div>
+          <div className='project-languages'>
+            <span>Javascript</span>
+            <span>React</span>
+            <span>AWS</span>
+            <span>Webpack</span>
+            <span>CSS</span>
           </div>
         </div>
-
+        <div><FontAwesomeIcon className='icon-link' icon={faGithub} size='2x' onClick={() => openLink('https://github.com/Seinfeld-Front-End-Capstone/fec-rfp2207-seinfeld/tree/main/client/src/components/questionsAnswers')} />
+        </div>
       </div>
 
-      <div className='project-card' >
-        <div className='project-title-and-icons'>
-          <span className='project-name'>Api Microservice</span>
-          <span><FontAwesomeIcon className='icon-link' icon={faGithub} size='2x' style={{ color: "#d8d8d8" }} onClick={() => openLink('https://github.com/sdc-green-lantern/Questions-API')} />
-          </span>
-        </div>
-
-
-        <div className='project-languages'>
-          <span>Node.js</span>
-          <span>Express</span>
-          <span>Postgres</span>
-          <span>AWS</span>
-        </div>
-
-        <div className='project-image-and-description'>
-          <img className='project-image' src={api} alt='cover image for tekstyle' />
+      <div className='project-card' onClick={() => openLink('https://github.com/sdc-green-lantern/Questions-API')}>
+        <img className='project-image' src={api} alt='cover image for questions api' />
+        <div className='project-content'>
+          <div className='project-name'>API Microservice</div>
           <div className='project-description'>
-            Inherited over 10 million records to replace an existing backend for an e-commerce site. Designed a Postgres database to handle high traffic, using an NGINX Load Balancer with multiple AWS EC2 instances to reduce response times to under 70ms.
+            This project involved managing over 10 million records to revamp the backend of an established e-commerce site. I designed a Postgres database to house the data and ensure it could withstand high traffic demands and implemented an NGINX load balancer, which efficiently distributed incoming traffic across multiple AWS EC2 instances.
+          </div>
+          <div className='project-languages'>
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>Postgres</span>
+            <span>AWS</span>
           </div>
         </div>
-
-      </div>
-
-      <div className='project-card'>
-        <div className='project-title-and-icons'>
-          <span className='project-name'>Libre</span>
-          <span><FontAwesomeIcon className='icon-link' icon={faGithub} size='2x' style={{ color: "#d8d8d8" }} onClick={() => openLink('https://github.com/Blue-Ocean-3-Bowser/libre/tree/main/client/src/components/HomePage/SideBar/Notifications')} />
-          </span>
+        <div><FontAwesomeIcon className='icon-link' icon={faGithub} size='2x' onClick={() => openLink('https://github.com/sdc-green-lantern/Questions-API')} />
         </div>
-
-        <div className='project-languages'>
-          <span>Javascript</span>
-          <span>Typescript</span>
-          <span>React</span>
-          <span>Firebase</span>
-          <span>AWS</span>
-        </div>
-
-        <div className='project-image-and-description'>
-          <img className='project-image' src={tekstyle} src={libre} alt='cover image for libre' />
-          <div className='project-description'>
-            A social scheduling web application that lets users find mutual free time with friends and plan events. Users can create events, send invitations to friends, and see updates to their notifications in real time.
-          </div>
-        </div>
-
       </div>
 
 
+
+      <div className='project-card' onClick={() => openLink('https://github.com/Blue-Ocean-3-Bowser/libre')}>
+        <img className='project-image' src={libre} alt='cover image for libre' />
+        <div className='project-content'>
+          <div className='project-name'>Libre</div>
+          <div className='project-description'>
+            Libre is a social scheduling application designed to simplify the process of finding common free time among friends to organize events. Users can schedule events within the platform, inviting their friends to partcipate. The application also features a real-time notification system, ensuring that all particpants are immediately informed of any event invitations, changes to events, or friend requests.
+          </div>
+          <div className='project-languages'>
+            <span>Javascript</span>
+            <span>Typescript</span>
+            <span>React</span>
+            <span>Firebase</span>
+            <span>AWS</span>
+          </div>
+        </div>
+        <div><FontAwesomeIcon className='icon-link' icon={faGithub} size='2x' onClick={() => openLink('https://github.com/Blue-Ocean-3-Bowser/libre')} />
+        </div>
+      </div>
     </div>
   )
 }
