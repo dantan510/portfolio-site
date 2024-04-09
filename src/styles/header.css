@@ -1,12 +1,22 @@
 @font-face {
-  font-family: 'Oxygen-Mono';
-  src: url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen')
+  font-family: 'SF UI Text', sans-serif;
+  src: url('https://fonts.cdnfonts.com/css/sf-ui-text-2')
+}
+
+@font-face {
+  font-family: 'Camphor';
+  src: url('../fonts/camphor-thin.ttf') format('truetype');
+}
+
+:root {
+  --purple: #4831d4;
 }
 
 .header {
   display: flex;
   justify-content: flex-end;
-  background-color: #202020;
+  /* background-color: #F9F9F9; */
+  background-color: rgba(249, 249, 249, 0.8);
   padding-right: 2em;
   position: sticky;
   top: 0;
@@ -48,7 +58,7 @@ div .line-left:before {
   display: block;
   width: 1.5em;
   height: 0.1em;
-  background: white;
+  background: black;
   left: 1.7%;
   top: 53%;
   position: absolute;
@@ -76,7 +86,7 @@ div .line-right:after {
   display: block;
   width: 5em;
   height: 0.1em;
-  background: white;
+  background: black;
   left: 93%;
   top: 53%;
   position: absolute;
@@ -96,14 +106,13 @@ div .line-right:after {
 }
 
 a {
-  font-family: 'Oxygen Mono', monospace;
+  font-family: 'Camphor', sans-serif;
   position: relative;
   transition: transform 0.5s ease
 }
 
 a:hover {
-  color: rgb(176, 176, 227);
-  transform: translateY(-4px);
+  transform: translateY(-5px);
 }
 
 @media (max-width: 700px) {

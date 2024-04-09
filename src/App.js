@@ -1,5 +1,4 @@
 import React from 'react'
-import About from './pages/About'
 import Contact from './pages/Contact'
 import Footer from './pages/Footer'
 import Header from './pages/Header'
