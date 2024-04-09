@@ -55,7 +55,6 @@ const Home = ({ openLink, executeScroll }) => {
                 {Array.isArray(value) ? (
                   <span>[{value.map((item, index) => {
                     let linkContent;
-                    // Check the content of each item to determine the link type
                     if (item.includes('gmail')) {
                       linkContent = <a className='contactInfo-links' onClick={() => handleClicks()}>{item}</a>;
                     } else if (item.toLowerCase().includes('linkedin')) {
@@ -63,7 +62,6 @@ const Home = ({ openLink, executeScroll }) => {
                     } else if (item.toLowerCase().includes('github')) {
                       linkContent = <a className='contactInfo-links' onClick={() => openLink('https://github.com/dantan510')}>{item}</a>;
                     } else {
-                      // Fallback for any string that doesn't match the above conditions
                       linkContent = item;
                     }
 
@@ -114,19 +112,6 @@ const Home = ({ openLink, executeScroll }) => {
           <div className='statement empty-statement'>{'>'}<span className='blinker'> _</span></div>
         </div>
       </div>
-      {/* <div className='homepage-dt'>Daniel Tan</div>
-      <div className='homepage-title'>
-        <span className='fadeInUp'>FULL STACK SOFTWARE ENGINEER</span>
-      </div>
-      <div className='contact-box'>
-        <div className='contact-button' onClick={() => executeScroll('contact')}>
-          <span className='fade-up'>Get In Touch</span>
-        </div>
-      </div>
-      <div className='icon-container'>
-        <FontAwesomeIcon className='icon-link fadeIn' icon={faGithub} size='2x' style={{ color: "#333" }} onClick={() => openLink('https://github.com/dantan510')} />
-        <FontAwesomeIcon className='icon-link fadeIn' icon={faLinkedin} size='2x' style={{ color: "#333" }} onClick={() => openLink('https://www.linkedin.com/in/danieltan510/')} />
-      </div> */}
       <div>
         <div className={`arrow animated bounce ${scrolling ? 'fade' : ''}`}></div>
       </div>
