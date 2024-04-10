@@ -393,3 +393,21 @@ body {
   transition: 1s all ease-out;
 }
 
+@media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero-container {
+    margin: 3rem 1.5rem;
+    padding: 0;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
+

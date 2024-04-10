@@ -88,19 +88,6 @@ const Contact = ({ openLink }) => {
         <h1 className='contact-title'>Send me a message!</h1>
         <div className='contact-sub'>Got a question or proposal, or just want <br /> to say hello? Go ahead!</div>
       </div>
-      {/* <div className='contact-box'>
-        <div className='contact-info'>
-          <div className='email'>dantan510@gmail.com</div>
-          <FontAwesomeIcon className={`icon ${isCopied ? 'check-icon copied' : 'copy-icon'}`} icon={isCopied ? faCheck : faCopy} onClick={() => {
-            navigator.clipboard.writeText('dantan510@gmail.com')
-            setIsCopied(true)
-          }} />
-        </div>
-        <div className='contact-info'>
-          <div className='download' onClick={() => openLink('https://drive.google.com/file/d/1Bp4YqqC35n3wIc6tdJTcYnQ2w3kQxz0u/view?usp=sharing')} >Download My Resume Here</div>
-          <FontAwesomeIcon icon={faDownload} />
-        </div>
-      </div> */}
       <form className='form-container' onSubmit={handleSubmit(onSubmit)} noValidate>
         <div className='form-wrapper'>
           {/* form name */}
@@ -176,28 +163,6 @@ const Contact = ({ openLink }) => {
   )
 
 }
-
-{/* <div className='contact-container' id='contact'>
-  <div className='contact-header'>
-    <h1 className='contact-title'>Send me a message!</h1>
-    <div className='contact-sub'>Got a question or proposal, or just want <br /> to say hello? Go ahead!</div>
-  </div>
-  <div className='contact-form'>
-    <div className='form-name-email'>
-      <div className='form-name'>
-        <label for='name'>Your Name</label>
-        <input id='name' placeholder='Enter your name' type='text' name='name' required='required'></input>
-      </div>
-      <div className='form-email'>
-        <label for='email'>Email Address</label>
-        <input id='email' placeholder='Enter your email address' type='email' name='_replyto' required='required'></input>
-      </div>
-    </div>
-    <div className='form-message'>
-      <label>Your Message</label>
-      <textarea placeholder='Hi, I would love to contact you for...' name='message' required='required' minlength='10'></textarea>
-    </div>
-  </div> */}
 
 export default Contact
 

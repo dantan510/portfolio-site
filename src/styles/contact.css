@@ -88,12 +88,6 @@ textarea:not(:placeholder-shown)~label {
   padding-top: 0.5em;
 }
 
-.contact-box {
-  display: flex;
-  align-items: center;
-  gap: 4em;
-}
-
 .contact-info {
   display: flex;
   justify-content: center;
@@ -103,32 +97,6 @@ textarea:not(:placeholder-shown)~label {
   border-radius: 0.5em;
   gap: 0.6em;
   cursor: pointer;
-}
-
-.copy-icon,
-.check-icon {
-  cursor: pointer;
-  transition: transform 0.5s ease
-}
-
-.icon {
-  transition: transform 0.5s ease-out, opacity 0.5s ease-in;
-}
-
-
-.check-icon {
-  opacity: 0;
-  transform: scale(0.8);
-}
-
-.icon.copied {
-  opacity: 0;
-  transform: scale(0.8);
-}
-
-.icon.copied.check-icon {
-  transform: scale(1.2);
-  opacity: 1;
 }
 
 .submit-button {
@@ -163,3 +131,24 @@ textarea:not(:placeholder-shown)~label {
 .submit-button:hover #right-arrow path {
   stroke: white; /* Change arrow color to white on hover */
 }
+
+@media (max-width: 700px) {
+  .contact-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-sub {
+    font-size: 0.9rem;
+  }
+
+  .form-wrapper {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}
+
